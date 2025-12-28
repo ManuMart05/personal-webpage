@@ -1,4 +1,4 @@
-{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,6 +17,21 @@ header {
     color: white;
     text-align: center;
     padding: 60px 20px;
+    #darkModeToggle {
+    margin-top: 15px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 0.9rem;
+}
+
+#darkModeToggle:hover {
+    background: rgba(255,255,255,0.35);
+}
+
 }
 
 header h1 {
@@ -120,4 +135,46 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 600px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        margin: 30px auto;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .skills ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-links {
+    margin-top: 15px;
+}
+
+.contact-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
 }
